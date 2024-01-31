@@ -17,7 +17,7 @@ def get_price(jsonfile, price):
 st.title("🤖GPT 활용 툴")
 
 st.write("---")
-st.h2("GPT fine tuning 예상 비용 계산기")
+st.header("GPT fine tuning 예상 비용 계산기")
 st.write("📈토큰 당 비용은 변동될 수 있습니다. 현 시점(2024-01-31) 토큰당 가격은 다음과 같습니다")
 st.write("1 토큰 = 4 byte로 계산하였으므로, 실제 비용과 차이가 있을 수 있습니다.")
 
