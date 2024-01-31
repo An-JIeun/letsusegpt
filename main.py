@@ -4,7 +4,7 @@ import tempfile
 
 def get_price(file, price):
     
-    filebite = os.path.getsize(file)
+    filebite = os.path.getsize(file.name)
     tokens = filebite / 4
     ktoken_bucket = tokens / 1000
     total_price = ktoken_bucket * price
