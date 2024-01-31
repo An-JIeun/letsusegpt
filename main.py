@@ -16,8 +16,8 @@ def get_price(file, price):
 st.title("🤖GPT 활용 툴")
 
 st.write("---")
-st.header("GPT fine tuning 예상 비용 계산기")
-st.write("📈토큰 당 비용은 변동될 수 있습니다. 현 시점(2024-01-31) 토큰당 가격은 다음과 같습니다")
+st.header("## GPT fine tuning 예상 비용 계산기")
+st.write("📈토큰 당 비용은 변동될 수 있습니다. 현 시점(2024-01-31) 토큰당 가격은 다음과 같습니다. 가격은 변동될 수 있으니 [OpenAI Pricing Page](https://openai.com/pricing)를 참고해 주세요!")
 st.write("1 토큰 = 4 byte로 계산하였으므로, 실제 비용과 차이가 있을 수 있습니다.")
 
 price = st.number_input("토큰 당 비용을 입력해주세요 (단위 : $)", value=0.008)
