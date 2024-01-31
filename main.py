@@ -3,8 +3,11 @@ import os
 import tempfile
 
 def get_price(file, price):
-    
-    filebite = os.path.getsize(file.name)
+     # 파일이 업로드된 임시 경로 가져오기
+    temp_location = st.file_uploader.label_container.markdown_source_parts[0].parts[1].upload_data.get("tempfile_path")
+
+    # 파일 크기 가져오기
+    filebite =  os.path.getsize(temp_location)
     tokens = filebite / 4
     ktoken_bucket = tokens / 1000
     total_price = ktoken_bucket * price
