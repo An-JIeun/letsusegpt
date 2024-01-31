@@ -28,4 +28,4 @@ if file is not None:
         with st.spinner("잠시만 기다려주세요"):
             pred_price = get_price(file, price)
             
-            st.write("예상 비용은%0.2f입니다."%pred_price)
+            st.write("예상 비용은 **%0.2f $**입니다."%pred_price)
