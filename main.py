@@ -6,6 +6,7 @@ def get_price(file, price):
     temp_dir = tempfile.TemporaryDirectory()
     temp_file_path = os.path.join(temp_dir.name, file.name)
     print(temp_file_path)
+    print("=====")
     filebite = os.path.getsize(temp_file_path)
     tokens = filebite / 4
     ktoken_bucket = tokens / 1000
