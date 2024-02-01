@@ -16,7 +16,7 @@ def get_price(file, price):
     return total_price
 
 
-st.title("🤖GPT 활용 툴")
+st.title("🤖Let's Use GPT!")
 
 st.write("---")
 st.header("🧑‍💻GPT fine tuning 예상 비용 계산기")
