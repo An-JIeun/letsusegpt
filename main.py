@@ -3,7 +3,7 @@ import os
 import tempfile
 import pandas as pd
 
-price_df = pd.DataFrame()
+price_df = pd.DataFrame([0.008, 0.006, 0.0002], columns=["토큰 당 fine-tuning 비용($)"], index=["gpt-3.5-turbo", "davinci-002", "babbage-002"])
 
 def get_price(file, price):
      # 파일이 업로드된 임시 경로 가져오기
